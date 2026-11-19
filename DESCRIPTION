@@ -1,0 +1,18 @@
+Package: m6APrediction
+Type: Package
+Title: Predict m6A RNA Modification Sites from Sequence Features
+Version: 1.0.0
+Authors@R: person(given = "Tongyue", family = "Zhao",
+    email = "Tongyue.Zhao24@student.xjtlu.edu.cn", role = c("aut", "cre"))
+Description: Provides sequence-feature encoding and random-forest scoring of
+    N6-methyladenosine (m6A) candidate sites. The package wraps the model
+    trained in the BIO215 practicals on seven sequence-derived features,
+    returns a per-site probability and a binary m6A status for one or many
+    candidate sites, and ships the fitted model together with an example
+    feature table in inst/extdata.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: randomForest, stats
+Depends: R (>= 3.5.0)
+Suggests: knitr, rmarkdown
+Config/roxygen2/version: 8.1.1
